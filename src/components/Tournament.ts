@@ -184,7 +184,7 @@ export class Tournament {
                     } while (this.matches.some(m => m.id === id));
                     const newMatch = new Match(id, match.round, match.match);
                     newMatch.values = {
-                        active: match.round === this.round && match.player1 !== null && match.player2 !== null,
+                        active: true,
                         player1: {
                             id: match.player1 === null ? null : match.player1.toString()
                         },
